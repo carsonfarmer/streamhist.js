@@ -1,0 +1,40 @@
+{
+  "name": "streamhist",
+  "version": "1.0.0",
+  "description": "Javascript implementation of streaming approximate histograms for continuous univariate data",
+  "main": "./index.js",
+  "dependencies": {
+    "bintrees": "^1.0.1",
+    "mathjs": "^3.5.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-deep-closeto": "^0.1.1",
+    "grunt": "^0.4.5",
+    "grunt-pure-cjs": "^1.4.0",
+    "mocha": "^3.0.2",
+    "present": "^1.0.0",
+    "randgen": "^0.1.0",
+    "seedrandom": "^2.4.2"
+  },
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carsonfarmer/streamhist.js.git"
+  },
+  "keywords": [
+    "streaming",
+    "histogram",
+    "online",
+    "approximate",
+    "quantiles"
+  ],
+  "author": "Carson J. Q. Farmer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carsonfarmer/streamhist.js/issues"
+  },
+  "homepage": "https://github.com/carsonfarmer/streamhist.js#readme"
+}
