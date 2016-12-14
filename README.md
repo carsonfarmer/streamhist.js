@@ -35,6 +35,8 @@ T-Digest for streaming quantile approximation by Will Welch.
 
 ## Quick Start
 
+**Warning**: This is total alpha version stuff here... very fragile!
+
 ### Node
 
 ```bash
@@ -50,7 +52,7 @@ for (var i = 0 ; i < N ; i += 1) {
 hist = new StreamHist();
 hist.push(x);
 console.log(td.summary());
-console.log("median ~ "+td.percentile(0.5));
+console.log("median ~ "+hist.percentile(0.5));
 ```
 
 ### In the browser
@@ -67,12 +69,12 @@ Embed it in HTML like this:
     for (var i=0; i < 1000000; i++) {
         hist.push(Math.random());
     }
-    document.write(td.summary())
+    document.write(hist.summary())
 </script>
 ```
 
 ## Dependencies
 
-`bintrees`: https://www.npmjs.com/package/bintrees
-`underscore`: https://www.npmjs.com/package/underscore
-`argminmax`: https://www.npmjs.com/package/argminmax
+* `bintrees`: https://www.npmjs.com/package/bintrees
+* `underscore`: https://www.npmjs.com/package/underscore
+* `argminmax`: https://www.npmjs.com/package/argminmax
