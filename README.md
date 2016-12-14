@@ -73,8 +73,15 @@ Embed it in HTML like this:
 </script>
 ```
 
+## Testing
+
+After installing, you should have all the things you need as per `package.json`'s `devDependencies` (which are quite a lot). Then just run the tests (uses `mocha`):
+
+```bash
+npm test
+```
+
 ## Dependencies
 
 * `bintrees`: https://www.npmjs.com/package/bintrees
-* `underscore`: https://www.npmjs.com/package/underscore
-* `argminmax`: https://www.npmjs.com/package/argminmax
+* `mathjs`: http://mathjs.org
